@@ -1,4 +1,14 @@
 def removel(text):
+    """ Stopwords are the English words which does not add much meaning to a sentence. 
+    They can safely be ignored without sacrificing the meaning of the sentence.
+
+    Args:
+        text (str): str
+
+    >>> removel("Nick likes to play football, however he is not too fond of tennis.")
+    Nick likes play football, however fond tennis.
+
+    """
     import_w = []
     removel_w = ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', "you're", 
     "you've", "you'll", "you'd", 'your', 'yours', 'yourself', 'yourselves', 'he', 'him', 'his', 
@@ -24,4 +34,8 @@ def removel(text):
             import_w.append(w)
     print((' ').join(import_w))
 
-removel("Nick likes to play football, however he is not too fond of tennis.")
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+    
