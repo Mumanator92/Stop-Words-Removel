@@ -1,9 +1,9 @@
 def removel(text):
-    """ Stopwords are the English words which does not add much meaning to a sentence. 
+    """This function remove stopwords are the English words which does not add much meaning to a sentence. 
     They can safely be ignored without sacrificing the meaning of the sentence.
 
     Args:
-        text (str): str
+        text(str): str
 
     >>> removel("Nick likes to play football, however he is not too fond of tennis.")
     Nick likes play football, however fond tennis.
